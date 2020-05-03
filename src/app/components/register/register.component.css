@@ -4,9 +4,8 @@ h1,h2,h3 {margin: 0;}
 .ebook-popup-sec h3 {margin: 0 0 2px 0;padding: 0;line-height: 22px;padding-bottom: 20px;font-family: 'Montserrat', sans-serif;font-size: 15px;color: #000;font-weight: 500;}
 .ebook-popup-sec h2 {margin: 0 0 12px 0;padding: 0px;font-family: 'Montserrat', sans-serif;font-size: 26px;color: #000;text-transform: uppercase;letter-spacing: 2px;font-weight: 700;}
 .ebook-popup-sec h5 {font-size: 12px;letter-spacing: 1px;color: #464646;font-family: 'Montserrat', sans-serif;}
-.ebook-popup-sec h5 span {text-decoration: underline}
+.ebook-popup-sec h5 span {text-decoration: underline;}
 .ebook-popup-sec h5 span:hover {cursor: pointer; color: #A970C1;}
-
 
 .ebook-email-sec { margin: 0px; padding: 0px; width: 100%; float: left; }
 .ebook-popup-sec .ebookemail-input1,.ebook-popup-sec .ebookemail-input2 { width: 47%;border: none; margin-bottom: 30px; float: left; padding: 17px;border-radius: 6px; font-family: 'Montserrat', sans-serif;font-size: 13px;font-weight: 500; box-sizing: border-box; }

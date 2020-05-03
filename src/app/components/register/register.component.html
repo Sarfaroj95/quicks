@@ -1,0 +1,27 @@
+<section class="popup-graybox">
+  <div class="ebook-popup-sec">
+    <img src="../../../assets/login02_popup.png" alt="">
+    <h2 data-edit="text">Register to our course</h2>
+    <h3 data-edit="text">Register to our free online course and start your favourite technology
+    </h3>
+    <div class="ebook-email-sec">
+      <form [formGroup]="saveFrom" (ngSubmit)="onSubmit()">
+
+        <input formControlName="first_name" type="text" class="ebookemail-input1" data-edit="placeholder"
+          placeholder="Enter first name">
+        <input formControlName="last_name" type="text" class="ebookemail-input2" data-edit="placeholder"
+          placeholder="Enter last name">
+
+        <input formControlName="email" type="text" class="ebookemail-input1" data-edit="placeholder"
+          placeholder="Enter  email">
+        <input formControlName="password" type="password" class="ebookemail-input2" data-edit="placeholder"
+          placeholder="Enter  password">
+
+        <button class="ebook-input-btn" type="submit">alright, Register now</button>
+      </form>
+
+      <!-- <button class="ebook-cls-btn close-btn">X</button> -->
+    </div>
+    <h5>Go back<a routerLink="/login"><span> Click Here</span></a> to Login</h5>
+  </div>
+</section>

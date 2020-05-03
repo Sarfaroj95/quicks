@@ -1,17 +1,21 @@
-<div class="main" style="background-color: blueviolet;">
-  <section class="popup-graybox">
-    <div class="ebook-popup-sec">
-      <img src="../../../assets/login02_popup.png" alt="">
-      <h2 data-edit="text">Login to our Store</h2>
-      <h3 data-edit="text">Login to our online store and start shopping your favourite products withg huge discounts
-      </h3>
-      <div class="ebook-email-sec">
-        <input type="email" class="ebookemail-input1" data-edit="placeholder" placeholder="Enter User Name">
-        <input type="email" class="ebookemail-input2" data-edit="placeholder" placeholder="Enter Password">
+<section class="popup-graybox">
+  <div class="ebook-popup-sec">
+    <img src="../../../assets/login02_popup.png" alt="">
+    <h2 data-edit="text">Login to our course</h2>
+    <h3 data-edit="text">Login to our free online course and start your favourite technology
+    </h3>
+    <div class="ebook-email-sec">
+      <form [formGroup]="saveFrom" (ngSubmit)="onSubmit()">
+
+        <input formControlName="email" type="text" class="ebookemail-input1" data-edit="placeholder"
+          placeholder="Enter user email">
+        <input formControlName="password" type="password" class="ebookemail-input2" data-edit="placeholder"
+          placeholder="Enter user password">
         <button class="ebook-input-btn" type="submit">alright, login now</button>
-        <!-- <button class="ebook-cls-btn close-btn">X</button> -->
-      </div>
-      <h5>Not Registered? <span>Click Here</span> to Register</h5>
+      </form>
+
+      <!-- <button class="ebook-cls-btn close-btn">X</button> -->
     </div>
-  </section>
-</div>
+    <h5>Not Registered? <a routerLink="/register"><span> Click Here</span></a>to Register</h5>
+  </div>
+</section>

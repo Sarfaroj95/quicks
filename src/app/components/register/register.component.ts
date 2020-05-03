@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 
+
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   saveFrom: FormGroup;
 
   constructor(private fb: FormBuilder) { }
@@ -17,6 +18,8 @@ export class LoginComponent implements OnInit {
 
   initForm() {
     this.saveFrom = this.fb.group({
+      first_name: [''],
+      last_name: [''],
       email: [''],
       password: ['']
     })
